@@ -2,9 +2,8 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color: #FFFFFF;
+  --primary-white-color: #ffffff;
 }
-
 
 body {
   background-color: var(--primary-white-color);
@@ -160,15 +159,13 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-
-
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
 }
-
 
 .hero-title {
   color: #ffffff;
@@ -206,12 +203,43 @@ img {
 .feature-list {
   display: flex;
   list-style: none;
-
 }
 
 .feature-list .feature-name:not(:last-child) {
   margin-right: 30px;
 }
+
+.feature-list .feature-name::before {
+  display: block;
+  content: "";
+  height: 120px;
+  outline: 1px solid black;
+  margin-bottom: 30px;
+
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA; */
+}
+
+.feature-name.icon-antenna::before {
+  background-image: url(../images/antenna_1.svg);
+}
+
+.feature-name.icon-clock::before {
+  background-image: url(../images/clock_2.svg);
+}
+
+.feature-name.icon-diagram::before {
+  background-image: url(../images/diagram_3.svg);
+}
+
+
+.feature-name.icon-astronaut::before {
+  background-image: url(../images/astronaut_4.svg);
+}
+
+
 
 .feature-list .title {
   color: var(--primary-text-color);
@@ -251,7 +279,7 @@ img {
 }
 
 .sec3 {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -369,9 +397,9 @@ img {
 /* классы для portfolio.html */
 
 .container.sec-works {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-top: 94px;
-   padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .button-list {
@@ -379,7 +407,7 @@ img {
   list-style: none;
   justify-content: center;
 
- margin-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .button-menu:not(:last-child) {
@@ -387,8 +415,6 @@ img {
 }
 
 .button-function {
-  
-
   color: #212121;
   background-color: #f5f4fa;
   font-family: inherit;
@@ -400,7 +426,7 @@ img {
   width: 125px;
   height: 38px;
   border-radius: 4px;
-  border: 2px solid transparent
+  border: 2px solid transparent;
 }
 
 .button-function:hover,
@@ -454,5 +480,4 @@ img {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.88;
-  
 }
