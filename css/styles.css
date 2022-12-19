@@ -124,7 +124,8 @@ img {
 
 .site-nav-list .link,
 .contact {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   color: var(--primary-text-color);
@@ -140,16 +141,15 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .site-nav-list .link.current {
   color: var(--accent-color);
 }
 
-.header_icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header_icon {
+  margin-right: 10px;
 }
 
 
@@ -226,17 +226,20 @@ img {
 }
 
 .feature-name .thumb{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   content: '';
   height: 120px;
-  outline: 1px solid black;
+  background-color: #f5f4fa; 
+  border-radius: 4px;
+  /* outline: 1px solid black; */
   margin-bottom: 30px;
 
-  /* background-size: contain; */
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  background-position: center;*/
 }
 /* 
 .feature-name.icon-antenna::before {
@@ -379,6 +382,56 @@ img {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
+
+
+.sec-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title {
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-item-box {
+display: block;
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 92px;
+left: 615px;
+top: 2490px;
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+fill: #AFB1B8;
+}
+
+.customers-item-box:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.customers_icons {
+  margin: 16px 32px;
+}
+
+
 
 /* end of main. */
 
