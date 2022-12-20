@@ -234,7 +234,6 @@ img {
   height: 120px;
   background-color: #f5f4fa; 
   border-radius: 4px;
-  /* outline: 1px solid black; */
   margin-bottom: 30px;
 
   /* background-size: contain;
@@ -538,8 +537,7 @@ margin-bottom: 20px;
 
 .join-link {
   background-position: center;
-  /* fill: var(--primary-white-color); */
-  fill: white;
+ fill: var(--primary-white-color);
   margin: 0;
   padding: 0;
 }
