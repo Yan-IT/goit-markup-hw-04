@@ -441,6 +441,10 @@ fill: #AFB1B8;
   background-color: #2f303a;
 }
 
+.container-footer {
+  display: flex;
+}
+
 .footer-logo {
   color: #ffffff;
   font-family: 'Raleway';
@@ -490,6 +494,54 @@ fill: #AFB1B8;
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+
+.join {
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.join-title {
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+
+margin-bottom: 20px;
+}
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+.join-item {
+}
+.join-button {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-button:hover {
+  background: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+
+.join-link {
+  background-position: center;
+  /* fill: var(--primary-white-color); */
+  fill: white;
+  margin: 0;
+  padding: 0;
 }
 
 /* классы для portfolio.html */
